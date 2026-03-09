@@ -1,4 +1,4 @@
-import _mysql_connector
+import mysql.connector
 from flask import Flask
 
 app = Flask(__name__)
