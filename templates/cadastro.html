@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <!-- Este formulário que envia os dados para o servidor -->
 
 <form method="POST">
@@ -16,4 +16,32 @@
         Cadastrar
     </button>
 </form>
+
+<!-- Página HTML de Cadastro - Código Completo -->
+<head>
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Criar Conta</h1>
+
+    <!-- Formulário de Cadastro -->
+    <form method="POST">
+        <label>Nome:</label> <!-- label -> Etiqueta/Caixinha de texto-->
+        <input type="text" name="nome" required> <!-- Campo obrigatório-->
+        <br><br> <!--Break/quebra de linha -->
+
+        <label>Email:</label>
+        <input type="email" name="email" required> <!-- Valida email-->
+        <br><br>
+
+        <label>Senha:</label>
+        <input type="password" name="senha" required> <!-- Oculta senha -->
+        <br><br>
+
+        <button type="submit">Cadastrar</button> <!-- Envia formulário -->
+    </form>
+    
+    <br>
+    <a href="/login">Já tem conta? Faça login</a> <!-- Link para login -->
+</body>
 </html>
